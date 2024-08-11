@@ -1,19 +1,22 @@
-'use client'
-import { useAuthContextHook } from '@/context/use-auth-context'
+'use client'  // Mark the component as a Client Component
+
 import React, { useState } from 'react'
+import dynamic from 'next/dynamic'
+import { useAuthContextHook } from '@/context/use-auth-context'
 import { useFormContext } from 'react-hook-form'
 import TypeSelectionForm from './type-selection-form'
-import dynamic from 'next/dynamic'
 import { Spinner } from '@/components/spinner'
+
+const LoadingSpinner = () => <Spinner noPadding={false} />
 
 const DetailForm = dynamic(() => import('./account-details-form'), {
   ssr: false,
-  loading: Spinner,
+  loading: LoadingSpinner,
 })
 
 const OTPForm = dynamic(() => import('./otp-form'), {
   ssr: false,
-  loading: Spinner,
+  loading: LoadingSpinner,
 })
 
 type Props = {}
