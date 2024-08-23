@@ -1,4 +1,4 @@
-<img src="apps/web/public/logo.png" alt="logo" width="100" height="100">
+<img src="/public/images/logo.png" alt="logo" width="100" height="100">
 
 # corinna-ai
 
