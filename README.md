@@ -64,7 +64,7 @@ NEXT_PUBLIC_STRIPE_PUBLISH_KEY=your_stripe_publish_key
 
 # Prisma Configuration
 DATABASE_URL='your_database_url'
-
+#testtttt
 
 ```
 
